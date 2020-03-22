@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" version="2.5">
+
+
+    <servlet>
+        <servlet-name>gggDispatherServlet</servlet-name>
+        <servlet-class>com.ggg.servlet.gggDispatherServlet</servlet-class>
+        <init-param>
+            <param-name>applicationContext</param-name>
+            <param-value>application.properties</param-value>
+        </init-param>
+        <!--何时加载-->
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>gggDispatherServlet</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+
+</web-app>
